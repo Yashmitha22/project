@@ -20,7 +20,7 @@ header{
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -52,6 +52,30 @@ header ul li a{
 header lu li a:hover{
     color: var(--main-color);
 }
+header .bars{
+    display: none;
+}
 header .bars img{
     width: 30px;
+}
+@media(max-width:991px){
+    header.navigation{
+        position: absolute;
+        top: 75px;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    header .navigation li{
+        margin: 15px 0px;
+    }
+    header .bars{
+        display: block;
+    }
 }
