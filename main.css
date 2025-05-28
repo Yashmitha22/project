@@ -65,6 +65,13 @@ header.active{
     background: #fFF;
     box-shadow: 1px0px #DDD;
 }
+header.active .logo a{
+    color: var(--main-color);
+}
+header.active ul li a{
+    color: var(--main-color);
+
+}
 @media(max-width:991px){
     header.navigation{
         position: absolute;
