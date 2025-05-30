@@ -15,10 +15,15 @@ myNav();
 
 function myHeader(){
     let header = document.getElementById("header");
+    let lamp = document.getElementById("lamp");
     window.addEventListener("scroll",function(){
         if(window.scrollY > 0){
             header.classList.add("active")
+            lamp.src = "photos\img3bt.jpeg";
+        }else{
+            header.classList.remove("active")
+            lamp.src = "photos\img4.jpeg";
         }
-
     })
 }
+myHeader()
