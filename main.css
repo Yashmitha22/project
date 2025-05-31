@@ -73,6 +73,12 @@ header.active ul li a{
     color: var(--main-color);
 
 }
+header.active.bars img{
+    padding :4px 5px;
+    color: var(--main-color);
+    background: var(--main-color);
+    width: 33px;
+}
 @media(max-width:991px){
     header.navigation{
         position: absolute;
@@ -80,16 +86,21 @@ header.active ul li a{
         right: -50%;
         width: 100%;
         height: 100vh;
-        background: #000;
+        background: #fFF;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         transition: .5s ease-in-out;
+        box-shadow: -1px 0px 0px #DDD;
 
     }
     header .navigation li{
         margin: 15px 0px;
+    }
+    header .navigation li a{
+        color: var(--main-color);
+
     }
     header .bars{
         display: block;
@@ -104,4 +115,46 @@ header.active ul li a{
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+
+.big-bg .bg-content{
+    color: #fFF;
+}
+.big-bg .bg-content h1{
+    font-size: 50px;
+}
+.big-bg .bg-content hr{
+    background: #fFF;
+    height: 1px;
+    width: 50%;
+    margin: 15px auto;
+}
+.big-bg .bg-content .bg-link{
+    margin-top: 15px;
+
+}
+.bg-content .bg-link a{
+    text-decoration: none;
+    color: #fFF;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    border: 2px solid #fFF;
+    display: inline-block;
+    position: relative;
+}
+.bg-link a::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    background: var(--main-color);
+    width: 100%;
+    height: 100%;
+}
+
+
+
